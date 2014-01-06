@@ -1,6 +1,8 @@
 rvm:
   - "1.9.3"
 #  - "2.0"
+before_install:
+  - gem update --system 1.7.2
 before_script:
   - find ./config -depth -name "*.yml.example" -exec sh -c 'cp "$1" "${1%.yml.example}.yml"' _ {} \;
   - psql -c 'create database myapp_test;' -U postgres; cp ./config/database.travis_yml ./config/database.yml
