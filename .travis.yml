@@ -2,8 +2,8 @@ rvm:
   - "1.9.3"
 #  - "2.0"
 before_script:
-  - RAILS_ENV=test rake db:create db:migrate
   - psql -c 'create database myapp_test;' -U postgres; cp ./config/database.travis_yml ./config/database.yml
+  - RAILS_ENV=test rake db:create db:migrate
 script:
   - bundle exec spec spec/models
 gemfile:
