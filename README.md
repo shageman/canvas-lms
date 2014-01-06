@@ -1,4 +1,4 @@
-Canvas LMS
+Canvas LMS [![Build Status](https://travis-ci.org/shageman/canvas-lms.png?branch=master)](https://travis-ci.org/shageman/canvas-lms)
 ======
 
 Canvas is a new, open-source LMS by Instructure Inc. It is released under the
