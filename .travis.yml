@@ -1,7 +1,9 @@
 rvm:
   - "1.9.3"
 #  - "2.0"
-script: spec/spec
+script:
+  - spec spec/models
+  - spec spec/helpers
 gemfile:
   - Gemfile
 #  - gemfiles/Gemfile.rails-3.x
