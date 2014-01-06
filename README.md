@@ -15,3 +15,14 @@ on our wiki.
 
  * [Quick Start](http://github.com/instructure/canvas-lms/wiki/Quick-Start)
  * [Production Start](http://github.com/instructure/canvas-lms/wiki/Production-Start)
+
+Getting started with development
+================================
+
+    git clone https://github.com/shageman/canvas-lms.git
+    cd canvas-lms
+    bundle
+    #Create a config/database.yml; e.g., by cloning database.yml.example
+    rake db:create db:migrate
+    RAILS_ENV=test rake db:create db:migrate
+    bundle exec spec spec/models
