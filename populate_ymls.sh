@@ -1,0 +1,1 @@
+find ./config -depth -name "*.yml.example" -exec sh -c 'cp "$1" "${1%.yml.example}.yml"' _ {} \;
