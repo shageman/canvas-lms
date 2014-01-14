@@ -11,6 +11,21 @@ script:
 gemfile:
   - Gemfile
 env:
+  - SPEC="spec/apis/**/*_spec.rb"
+  - SPEC="spec/controllers/**/*_spec.rb"
+  - SPEC="spec/gem_integration/**/*_spec.rb"
+  - SPEC="spec/helpers/**/*_spec.rb"
+  - SPEC="spec/initializers/**/*_spec.rb"
+  - SPEC="spec/integration/**/*_spec.rb"
+  - SPEC="spec/lib/**/*_spec.rb"
+  - SPEC="spec/messages/**/*_spec.rb"
+  - SPEC="spec/migrations/**/*_spec.rb"
   - SPEC="spec/models/[a-m]*_spec.rb"
   - SPEC="spec/models/[n-z]*_spec.rb"
-  - SPEC="spec/models/**/*_spec.rb"
+  - SPEC="spec/models/*/*_spec.rb"
+  - SPEC="spec/observers/**/*_spec.rb"
+  - SPEC="spec/presenters/**/*_spec.rb"
+  - SPEC="spec/selenium/**/*_spec.rb"
+  - SPEC="spec/serializers/**/*_spec.rb"
+  - SPEC="spec/services/**/*_spec.rb"
+  - SPEC="spec/views/**/*_spec.rb"
