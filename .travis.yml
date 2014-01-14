@@ -11,6 +11,6 @@ script:
 gemfile:
   - Gemfile
 env:
-  - SPEC=spec/models/[a-m]*_spec.rb
-  - SPEC=spec/models/[n-z]*_spec.rb
-  - SPEC=spec/models/**/*_spec.rb
+  - SPEC="spec/models/[a-m]*_spec.rb"
+  - SPEC="spec/models/[n-z]*_spec.rb"
+  - SPEC="spec/models/**/*_spec.rb"
